@@ -1,0 +1,13 @@
+# bash
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.mysql_history
+.ssh
+.subversion
+.viminfo
+.cache
+.local
+.git
+.gitignore
