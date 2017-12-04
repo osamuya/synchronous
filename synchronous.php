@@ -8,7 +8,6 @@ include __DIR__."/config.php";
 include __DIR__."/synchronousClass.php";
 
 
-$optionObject = new option();
 $synchronousObject = new synchronous(
 	$clientWebServer,
 	$remoteWebServer
@@ -29,6 +28,11 @@ if (empty($argv[1])) {
 } else {
 	$synchronousObject->getOption($argv[1]);
 }
+
+
+
+$source = $synchronousObject->dbsync();
+var_dump($source);
 
 
 
